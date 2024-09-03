@@ -1,4 +1,4 @@
-document.querySelector(".btn").addEventListener("click", function(){
+document.querySelector(".btn").addEventListener("mouseover", function(){
     document.querySelector(".btnContent").classList.remove("btnContentNone");
 })
 
