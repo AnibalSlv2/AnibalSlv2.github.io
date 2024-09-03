@@ -350,7 +350,7 @@ template {
 
 /*-----------------------------Aqui Comienza-----------------------------*/
 
-body{
+html{
     background: dimgrey;
     border: 10px solid green
 }
@@ -369,7 +369,7 @@ body{
 }
 
 .happy{
-    font-size: 330px;
+    font-size: 250px;
     position: relative;
     margin: 0;
     transition: 1s;
@@ -378,4 +378,74 @@ body{
     transition: 1s;
     transition-property: -webkit-text-stroke, color;
     text-shadow: 0px 10px 10px black;
+}
+
+.btn{
+    position: fixed;
+    border-radius: 500px;
+    width: 60px;
+    height: 60px;
+    background-color: #2e2201;
+    top: 90vh;
+    right: 5vh;
+    box-shadow:0px 8px 15px rgba(0, 0, 0, 0.5);
+    overflow:hidden;
+	transition: all 500ms ease 0ms;
+}
+
+.btn:hover{
+    width: 150px;
+	font-weight: bold; 
+	border-radius: 500px;
+	letter-spacing: 3px; 
+	background-color: #FFA500; 
+	padding: 0 15px;
+	position: fixed;
+	bottom: 30px;
+	box-shadow:0px 8px 15px rgba(0, 0, 0, 0.5);
+	z-index: 99;
+    cursor: pointer;
+}
+
+.btnRotate{
+    position: fixed;
+    border-radius: 500px;
+    border: dashed 3px #2e2201; 
+    width: 60px;
+    height: 60px;
+    background-color: #FFA500;
+    top: 90vh;
+    z-index: 1;
+    right: 5vh;
+}
+
+.btnRotateAnimation{
+    animation: borde infinite .3s;
+    animation-direction: normal;
+    animation-timing-function: linear;
+    animation-delay: 100ms;
+}
+
+.btnRotateNone{
+    display: none;
+}
+
+@keyframes borde{
+    from {
+        transform: rotate(0deg)
+    } 
+    to {
+        transform: rotate(1turn)
+    }
+}
+
+.btnContent{
+    font-size: 20px;
+    transition: 200ms;
+}
+
+.btnContentNone{
+    visibility: hidden;
+    font-size: 0px;
+    transition: 200ms;
 }
