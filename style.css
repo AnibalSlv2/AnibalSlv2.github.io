@@ -356,7 +356,6 @@ html{
 }
 
 #inicio{
-    display: flex;
     width: 100%;
     height: 100%;
 }
@@ -386,11 +385,19 @@ html{
     width: 60px;
     height: 60px;
     background-color: #2e2201;
-    top: 90vh;
-    right: 5vh;
+    top: 93vh;
     box-shadow:0px 8px 15px rgba(0, 0, 0, 0.5);
     overflow:hidden;
+    z-index: 99;
 	transition: all 500ms ease 0ms;
+}
+
+.btnOne{
+    right: 3vh;
+}
+
+.btnTwo{
+    left: 3vh;
 }
 
 .btn:hover{
@@ -407,45 +414,281 @@ html{
     cursor: pointer;
 }
 
-.btnRotate{
-    position: fixed;
-    border-radius: 500px;
-    border: dashed 3px #2e2201; 
-    width: 60px;
-    height: 60px;
-    background-color: #FFA500;
-    top: 90vh;
-    z-index: 1;
-    right: 5vh;
-}
 
-.btnRotateAnimation{
-    animation: borde infinite .3s;
-    animation-direction: normal;
-    animation-timing-function: linear;
-    animation-delay: 100ms;
-}
-
-.btnRotateNone{
-    display: none;
-}
-
-@keyframes borde{
-    from {
-        transform: rotate(0deg)
-    } 
-    to {
-        transform: rotate(1turn)
-    }
-}
-
+/*                  No se porque -> Le da una cierta animacion (se vuelve pequeño)
 .btnContent{
     font-size: 20px;
     transition: 200ms;
 }
+*/
+
 
 .btnContentNone{
     visibility: hidden;
     font-size: 0px;
     transition: 200ms;
+}
+#trollGoogle {
+    font-size: 0px;
+}
+
+
+#final {
+  flex-direction: column;
+  cursor: default;
+    
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.none {
+    display: none;
+}
+
+.flex {
+    display: flex;
+}
+
+
+.btnDos {
+    position: fixed;
+    border-radius: 500px;
+    width: 60px;
+    height: 60px;
+    background-color: #2e2201;
+    top: 93vh;
+    box-shadow:0px 8px 15px rgba(0, 0, 0, 0.5);
+    overflow:hidden;
+    z-index: 99;
+	transition: all 500ms ease 0ms;
+}
+
+.btnDos:hover{
+    width: 150px;
+	font-weight: bold; 
+	border-radius: 500px;
+	letter-spacing: 3px; 
+	background-color: #FFA500; 
+	padding: 0 15px;
+	position: fixed;
+	bottom: 30px;
+	box-shadow:0px 8px 15px rgba(0, 0, 0, 0.5);
+	z-index: 99;
+    cursor: pointer;
+}
+
+.btnContentDos, .btnContent {
+    font-size: 20px;
+    transition: 200ms;
+}
+
+/*---------------------------Carta---------------------------*/
+
+#final {
+  display: flex;
+  flex-direction: column;
+  cursor: default;
+    
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container-letter {
+  position: relative;
+}
+
+.cover {
+  position: absolute;
+  border-left: 200px solid transparent;
+  border-right: 200px solid transparent;
+  border-top: 100px solid #AB8A70;
+  border-bottom: 100px solid transparent;
+
+  /*  */
+  transition: transform .75s;
+  transform-origin: top;
+}
+
+.paper {
+  cursor: default;
+  position: absolute;
+  padding: 1.5rem;
+  margin: 0 auto;
+  line-height: 2rem;
+  right: 0px;
+  /*  */
+  z-index: -1;
+  background: white;
+  width:;   /*<--------------- Tamaño del papel*/
+  height: 150px;
+  text-align: center;
+  transition: all .75s;
+}
+.relleno{
+  position: absolute;
+  border-left: 200px solid transparent;
+  border-right: 200px solid transparent;
+  border-top: 100px solid #876750;
+  border-bottom: 100px solid transparent;
+  z-index: -99;
+}
+.letter {
+  border-left: 200px solid #C8A387;
+  border-right: 200px solid #C8A387;
+  border-top: 100px solid transparent;
+  border-bottom: 100px solid #AB8A70;
+}
+
+.options {
+  display: flex;
+  gap: 5rem;
+}
+
+/*-----------------------------Color de los botones----------------------*/
+.botonCarta {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  display: inline-block;
+  font-size: 1em;
+  padding: 1em 2em;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #FFA500;
+  color: #fff;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+  box-shadow: 0 2px 25px rgba(229,148,0, 0.5);
+}
+
+.botonCarta:focus { outline: 0; }
+
+.botonCarta:before, .botonCarta:after {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 140%;
+  height: 100%;
+  left: -20%;
+  z-index: -1000;
+  transition: all ease-in-out 0.5s;
+  background-repeat: no-repeat;
+}
+
+.botonCarta:before {
+  display: none;
+  top: -75%;
+  background-image: radial-gradient(circle, #FFA500 20%, transparent 20%), radial-gradient(circle, transparent 20%, #FFA500 20%, transparent 30%), radial-gradient(circle, #FFA500 20%, transparent 20%), radial-gradient(circle, #FFA500 20%, transparent 20%), radial-gradient(circle, transparent 10%, #FFA500 15%, transparent 20%), radial-gradient(circle, #FFA500 20%, transparent 20%), radial-gradient(circle, #FFA500 20%, transparent 20%), radial-gradient(circle, #FFA500 20%, transparent 20%), radial-gradient(circle, #FFA500 20%, transparent 20%);
+  background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 10% 10%, 18% 18%;
+}
+
+.botonCarta:after {
+  display: none;
+  bottom: -75%;
+  background-image: radial-gradient(circle, #FFA500 20%, transparent 20%), radial-gradient(circle, #FFA500 20%, transparent 20%), radial-gradient(circle, transparent 10%, #FFA500 15%, transparent 20%), radial-gradient(circle, #FFA500 20%, transparent 20%), radial-gradient(circle, #FFA500 20%, transparent 20%), radial-gradient(circle, #FFA500 20%, transparent 20%), radial-gradient(circle, #FFA500 20%, transparent 20%);
+  background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%, 20% 20%;
+}
+
+.botonCarta:active {
+  transform: scale(0.9);
+  background-color: #FFA500;
+  box-shadow: 0 2px 25px rgba(255, 0, 130, 0.2);
+}
+
+.botonCarta.animate:before {
+  display: block;
+  animation: topBubbles ease-in-out 0.75s forwards;
+}
+
+.botonCarta.animate:after {
+  display: block;
+  animation: bottomBubbles ease-in-out 0.75s forwards;
+}
+ @keyframes
+topBubbles {  0% {
+ background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
+}
+ 50% {
+ background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 90% 30%;
+}
+ 100% {
+ background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%, 50% 40%, 65% 10%, 90% 20%;
+ background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+}
+}
+@keyframes
+bottomBubbles {  0% {
+ background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%, 70% -10%, 70% 0%;
+}
+ 50% {
+ background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%, 105% 0%;
+}
+ 100% {
+ background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%, 110% 10%;
+ background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+}
+}
+
+/*------------------------------Hasta aqui------------------------------*/
+.open-cover {
+  transform: rotatex(180deg);
+}
+
+.open-paper {
+  z-index: 99;
+}
+
+@keyframes openPaper {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: -150px;
+  }
+}
+
+.close-paper {
+  z-index: -1;
+}
+
+@keyframes closePaper {
+  0% {
+    top: -120px;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+
+.star {
+  display: none;
+  position: absolute;
+  top: 25%;
+  left: 46.5%;
+  margin: auto;
+  font-size: 3rem;
+
+  color: yellow;
+
+  animation: crecer 1s forwards ;
+}
+
+@keyframes crecer {
+  0% {
+    scale: 1;
+    opacity: 1;
+  }
+  100% {
+    scale: 3;
+    opacity: 0;
+
+  }
 }
