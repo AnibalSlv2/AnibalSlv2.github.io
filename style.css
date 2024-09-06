@@ -367,7 +367,7 @@ html{
 }
 
 .happy{
-    font-size: 250px;
+    font-size: 150px;
     position: relative;
     margin: 0;
     transition: 1s;
@@ -379,7 +379,7 @@ html{
 }
 
 .btn{
-    position: fixed;
+    position: absolute;
     border-radius: 500px;
     width: 60px;
     height: 60px;
@@ -431,17 +431,6 @@ html{
     font-size: 0px;
 }
 
-
-#final {
-  flex-direction: column;
-  cursor: default;
-    
-  gap: 3rem;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
 .none {
     display: none;
 }
@@ -452,7 +441,7 @@ html{
 
 
 .btnDos {
-    position: fixed;
+    position: absolute;
     border-radius: 500px;
     width: 60px;
     height: 60px;
@@ -514,7 +503,7 @@ html{
 .paper {
   cursor: default;
   position: absolute;
-  padding: 1.5rem;
+  padding: 1.3rem;
   margin: 0 auto;
   line-height: 2rem;
   right: 0px;
@@ -522,7 +511,7 @@ html{
   z-index: -1;
   background: white;
   width:;   /*<--------------- Tamaño del papel*/
-  height: 150px;
+  height: 155px;
   text-align: center;
   transition: all .75s;
   font-size: 14.5px;
