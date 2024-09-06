@@ -352,7 +352,6 @@ template {
 
 html{
     background: dimgrey;
-    border: 10px solid green
 }
 
 #inicio{
@@ -487,7 +486,6 @@ html{
 /*---------------------------Carta---------------------------*/
 
 #final {
-  display: flex;
   flex-direction: column;
   cursor: default;
     
@@ -527,6 +525,7 @@ html{
   height: 150px;
   text-align: center;
   transition: all .75s;
+  font-size: 14.5px;
 }
 .relleno{
   position: absolute;
