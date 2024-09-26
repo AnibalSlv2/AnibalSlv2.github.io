@@ -323,7 +323,6 @@ body{
 	background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    -webkit-mask-image: linear-gradient(#fff 80%, transparent);
 }
 
 .objetive-parrafe{
