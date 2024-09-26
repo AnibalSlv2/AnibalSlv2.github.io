@@ -318,11 +318,20 @@ body{
 
 #part-thre #objetive-img{
 	margin-top: 15%;
-	background-image: url(imagenes/quizasportada.png);
 	height: 250px;
 	background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    -webkit-mask-image: linear-gradient(#fff 80%, transparent);
+}
+
+#objetive-img img{
+	width: 100%;
+	background-repeat: no-repeat;
+    background-size:;
+    background-position: center;
+    text-align: center;
+    justify-content: center;
 }
 
 .objetive-parrafe{
