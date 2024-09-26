@@ -36,8 +36,10 @@ body{
 	display: inline-block;
 	margin: 0 20px;
 	color: #fff;
+	font-family: "Noto Serif", serif;
 	transition: 0.3s;
 	font-size: 18px;
+	text-decoration: none;
 	border-bottom: 3px solid transparent;
 }
 
@@ -86,7 +88,7 @@ body{
 	width: 70%;
 	display: flex;
 	font-size: 25px;
-	margin: 10% 25%;
+	margin: 10% 30%;
 }
 
 #icon-comienzo #map-icon{
@@ -109,7 +111,6 @@ body{
 	width: 70px;
 	height: 70px;
 	background-repeat: no-repeat;
-    background-size:;
     background-position: center;
     text-align: center;
     justify-content: center;
