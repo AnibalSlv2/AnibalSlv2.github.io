@@ -173,6 +173,7 @@ body{
 .parrafe{
 	font-family: "Noto Serif", serif;
 	margin: 5%;
+	margin-top: 2%;
 	font-size: 20px;
 	text-align: center;
 }
@@ -221,8 +222,8 @@ body{
 
 
 .pack-plan{
-	margin: 0 2%;
-	width: 100%;
+	margin: 0 auto;
+	width: 45%;
 	border-radius: 25px;
 	border: 2px solid #0E3264;
 	animation: gradient 15s ease infinite;
@@ -256,8 +257,9 @@ body{
 	font-family: "Bona Nova SC", serif;
 	font-style: italic;
 	background-color: #0E3264;
-	font-size: 25px;
+	font-size: 30px;
 	margin: 0;
+	padding: 3% 0;
 	border-top-right-radius: 22px;
 	border-top-left-radius: 22px;
 	text-align: center;
@@ -310,6 +312,13 @@ body{
 	cursor: pointer;
 }
 
+
+@media (max-width: 1080px) {
+            .pack-plan {
+                width: 25%;
+                margin: 0 10%;
+            }
+        }
 /*----------------------Tercera parte-----------------------------*/
 
 #part-thre{
