@@ -55,13 +55,15 @@ body{
 
 #inicio #portada{
 	height: 730px;
+	width: 100%;
 	background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    position: relative;
-    text-align: center;
-    justify-content: center;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	position: relative;
+	text-align: center;
+	justify-content: center;
+	object-fit: cover;
 }
 
 #portada::after{
@@ -173,6 +175,13 @@ body{
 	float: left;
 }
 
+@media (min-width: 600px){
+	#img-one{
+		height: 100%;
+		margin: auto;
+	}
+}
+
 #part-one #img-one img{
 	border-radius: 90px;
 	width: 450px;
@@ -191,13 +200,13 @@ body{
 #part-one-two{
 	padding-right: 1%;
 	display: flex;
+	margin-top: 5%;
 	padding-top: 3%;
 	padding-bottom: 1.2%;
 	background-color: #EEEEEE;
 }
 
 #part-one-two #img-two{
-	border: 2px dashed #012B65;
 	height: auto;
 	border-radius: 90px;
 	height: auto;
@@ -206,11 +215,18 @@ body{
 }
 
 #part-one-two #img-two img{
+	border: 2px dashed #012B65;
 	border-radius: 90px;
 	width: 450px;
 	object-fit: cover;
 }
 
+@media(min-width: 600px){
+	#img-two{
+		height: 100%;
+		margin: auto;
+	}
+}
 
 .text-parrafe{
 	margin-top: 3%;
@@ -540,6 +556,10 @@ body{
 
             #ubicacion{
             	text-align: center;
-            	padding: 0 5%;
+            	padding: 0 3%;
+            }
+
+            #cont{
+            	padding: 3%;
             }
         }
