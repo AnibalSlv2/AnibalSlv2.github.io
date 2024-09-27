@@ -91,6 +91,13 @@ body{
 	margin: 10% 30%;
 }
 
+  @media (min-width: 600px) {
+        #icon-comienzo {
+        	margin: 10% auto;
+            justify-content: space-around;
+        }
+    }
+
 #icon-comienzo #map-icon{
 	background-image: url(imagenes/map-icon.png);
 	width: 70px;
@@ -163,6 +170,7 @@ body{
 	/* height: calc(100% - 60px); */
 	object-fit: contain;
 	display: flex;
+	float: left;
 }
 
 #part-one #img-one img{
@@ -177,6 +185,7 @@ body{
 	margin-top: 2%;
 	font-size: 20px;
 	text-align: center;
+	float: right;
 }
 
 #part-one-two{
@@ -257,7 +266,7 @@ body{
 	font-family: "Bona Nova SC", serif;
 	font-style: italic;
 	background-color: #0E3264;
-	font-size: 30px;
+	font-size: 33px;
 	margin: 0;
 	padding: 3% 0;
 	border-top-right-radius: 22px;
@@ -304,6 +313,10 @@ body{
 	color: white;
 	transition: 0.5s;
 	font-family: "Noto Serif", serif;
+}
+.contactenos a{
+	color: white;
+	text-decoration: none;
 }
 
 .pack-plan .contactenos:hover{
@@ -523,5 +536,10 @@ body{
             .footer .container {
                 flex-direction: row;
                 justify-content: space-around;
+            }
+
+            #ubicacion{
+            	text-align: center;
+            	padding: 0 5%;
             }
         }
