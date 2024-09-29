@@ -33,6 +33,7 @@ body{
 	color: white;
 	font-family: "Noto Serif", serif;
 	opacity: 0;
+	cursor: default;
 }
 
 @media (max-width: 1080px){
@@ -45,10 +46,6 @@ body{
 	height: 95%;
 	border-radius: 100px;
 	margin: auto;
-}
-
-#navbar #logo img:hover{
-	cursor: pointer;
 }
 
 #navbar ul{
@@ -104,6 +101,35 @@ body{
 	left: 0;
 	bottom: 0;
 	background-image:linear-gradient(45deg, rgba(57,49,102,0.3) 0%, rgba(162,217,255,0.3) 100%);
+}
+
+#portada #title-one{
+	font-size: 65px;
+	font-family: "Bona Nova SC", serif;}
+
+@media (max-width: 1080px){
+	#title-one{
+		opacity: 0;
+	}
+}
+
+#portada .parrafe-title{
+	font-family: "Noto Serif", serif;
+	position: inherit;
+	color: white;
+	top: 40%;
+    left: 50%;
+    margin: 0;
+    padding: 0;
+    width: 95%;
+    font-size: 43px;
+    transform: translate(-50%, -50%);
+    z-index: 50;
+}
+
+#inicio #portada img{
+	width: 100%;
+	height: 100%;
 }
 
 .img1{
@@ -164,28 +190,6 @@ body{
 
 /*------------------------------------Comienzo--------------------------------------*/
 
-#portada #title-one{
-	font-size: 65px;
-	font-family: "Bona Nova SC", serif;}
-
-#portada .parrafe-title{
-	font-family: "Noto Serif", serif;
-	position: inherit;
-	color: white;
-	top: 40%;
-    left: 50%;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    font-size: 43px;
-    transform: translate(-50%, -50%);
-    z-index: 50;
-}
-
-#inicio #portada img{
-	width: 100%;
-	height: 100%;
-}
 
 #part-one{
 	margin: 1%;
@@ -195,7 +199,7 @@ body{
 }
 
 #part-one #img-one{
-	border: 2px dashed #A042BE;
+	/*border: 2px dashed #A042BE;*/
 	height: 299px;
 	width: 450px;
 	border-radius: 90px;
@@ -245,7 +249,7 @@ body{
 }
 
 #part-one-two #img-two img{
-	border: 2px dashed #012B65;
+	/*border: 2px dashed #012B65;*/
 	border-radius: 90px;
 	width: 450px;
 	object-fit: cover;
@@ -548,6 +552,14 @@ body{
 	margin-right: 3%;
 }
 
+#whatsapp{
+	transition: 0.5s
+}
+
+#whatsapp:hover{
+	transform: scale(1.1);
+}
+
 #instagram{
 	margin-right: 15px;
 	transition: 0.5s;
@@ -561,13 +573,13 @@ body{
 /*-------------------Div flotante----------------------*/
 
 .navbare{
-	opacity: 0;
+	display: none;
 }
 
 @media (max-width: 1080px){
 
 	.navbare {
-		opacity: 1;
+		display: inherit;
 		position: fixed;
 		bottom: 0;
 		width: 100%;
