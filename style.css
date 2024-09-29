@@ -226,7 +226,6 @@ body{
 	font-family: "Noto Serif", serif;
 	margin: 5%;
 	margin-top: 2%;
-	font-size: 21px;
 	text-align: center;
 	float: right;
 }
@@ -429,7 +428,7 @@ body{
 
 @media(max-width: 1080px){
 	.objetive-parrafe{
-		font-size: 18px;
+		font-size: 28px;
 	}
 }
 
