@@ -417,11 +417,10 @@ body{
 
 .objetive-title{
 	font-size: 45px;
-	border-bottom:solid 3px #0E3264; 
+	border-bottom:solid 3px #85B4D2; 
 	width: 45%;
 	margin: 3% auto;
 }
-
 /*----------------end--------------------*/
 
 #div-map{
@@ -561,67 +560,80 @@ body{
 
 /*-------------------Div flotante----------------------*/
 
-#contacto-movil{
-	text-align: center;
-	position: absolute;
-	top: 98%;
-	right: 0%;
-	margin-left: 68%;
-	position: fixed;
-	border:solid 2px #0E3264;
-	width: 33%;
-	justify-content: space-between;
-	width: 100%;
+.navbare{
+	opacity: 0;
 }
 
-#content-movil{
-}
+@media (max-width: 1080px){
 
-.icon-movil{
-	margin: 0% 1.5%;
-	background-repeat: no-repeat;
-    background-position: center;
-    text-align: center;
-    justify-content: center;
-}
+	.navbare {
+		opacity: 1;
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		background-color: #0E3264;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		padding: 10px 0;
+		box-shadow: 0 -2px 5px rgba(0,0,0,0.5);
+	    }
 
-.bordes-movil{
-	padding:0 5% 0 2.5%;
-	border-right:solid 2px #0E3264;
-}
+	.navbare .item {
+		text-align: center;
+		color: white;
+	    }
 
+	.navbare img {
+		width: 50px;
+		height: 50px;
+		transition: 0.5s;
+	    }
+
+	.navbare img:hover{
+		transform: scale(1.2);
+	}
+
+	.navbare p {
+		margin-top: 5px;
+	    }
+}
 /*--------------------------Final--------------------------*/
 
  .footer {
-            background-color: #0E3264;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
+	background-color: #0E3264;
+	color: white;
+    padding: 20px 0;
+    text-align: center;
         }
-        .footer .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .footer .container div {
-            margin: 10px 0;
-        }
-        .footer a {
-            color: #ffcc00;
-            text-decoration: none;
-        }
-        @media (min-width: 600px) {
-            .footer .container {
-                flex-direction: row;
-                justify-content: space-around;
-            }
 
-            #ubicacion{
-            	text-align: center;
-            	padding: 0 3%;
-            }
-
-            #cont{
-            	padding: 3%;
-            }
+.footer .container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
         }
+
+.footer .container div {
+	margin: 10px 0;
+    }
+
+.footer a {
+	color: #ffcc00;
+	text-decoration: none;
+    }
+
+@media (min-width: 600px) {
+	.footer .container {
+		flex-direction: row;
+		justify-content: space-around;
+    }
+
+    #ubicacion{
+    	text-align: center;
+    	padding: 0 3%;
+    }
+
+    #cont{
+     	padding: 3%;
+    }
+}
