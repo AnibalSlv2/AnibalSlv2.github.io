@@ -717,7 +717,7 @@ body{
 }
 
 .plus{
-	margin-top: 5%;
+	margin-top: 5%
 }
 
 .pack-plan ul{
@@ -767,9 +767,8 @@ body{
 		width: 100%;
 	}
     .pack-plan {
-	width: 50%;
-	margin: 5% auto;
-	}
+    	 width: 50%;
+    }
 }
 /*----------------------Tercera parte-----------------------------*/
 
